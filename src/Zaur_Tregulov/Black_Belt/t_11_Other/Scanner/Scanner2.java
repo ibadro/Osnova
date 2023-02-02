@@ -13,8 +13,7 @@ public class Scanner2 {
         Set<String> set = new TreeSet<>(); // упорядоченная коллекция неповторяющихся String
 
         try{
-            scanner = new Scanner(new FileReader(
-                    new File("C:\\Users\\Andrey\\Desktop\\RG.txt"))); // Читать из файла
+            scanner = new Scanner(new FileReader(new File("C:\\Users\\Andrey\\Desktop\\RG.txt"))); // Читать из файла
             scanner.useDelimiter("\\W"); // \W – Соответствует одному символу, который НЕ буква, НЕ цифра и НЕ «_»
             while (scanner.hasNext()){ // пока есть что читать
                 String word = scanner.next(); // присвоить word значение кадого прочитанного слова
